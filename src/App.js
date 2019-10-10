@@ -13,7 +13,8 @@ class App extends React.Component{
   }
 
   handleMessage(event){
-
+    this.setState({message: event.target.value});
+    console.log(event.target.value);
   }
 
   render() {
